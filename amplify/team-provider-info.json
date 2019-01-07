@@ -1,0 +1,43 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "multienvtest-20190107115025-authRole",
+            "UnauthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107115025-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107115025-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "multienvtest-20190107115025-deployment",
+            "UnauthRoleName": "multienvtest-20190107115025-unauthRole",
+            "StackName": "multienvtest-20190107115025",
+            "StackId": "arn:aws:cloudformation:us-east-2:502714467465:stack/multienvtest-20190107115025/47eb4d70-1244-11e9-ac50-06faad620df0"
+        },
+        "categories": {
+            "auth": {
+                "cognitoa67c853f": {}
+            }
+        }
+    },
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "multienvtest-20190107121155-authRole",
+            "UnauthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107121155-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107121155-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "multienvtest-20190107121155-deployment",
+            "UnauthRoleName": "multienvtest-20190107121155-unauthRole",
+            "StackName": "multienvtest-20190107121155",
+            "StackId": "arn:aws:cloudformation:us-east-2:502714467465:stack/multienvtest-20190107121155/48d223a0-1247-11e9-8fa5-0ae094dd1c0e"
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "multienvtest-20190107121345-authRole",
+            "UnauthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107121345-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107121345-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "multienvtest-20190107121345-deployment",
+            "UnauthRoleName": "multienvtest-20190107121345-unauthRole",
+            "StackName": "multienvtest-20190107121345",
+            "StackId": "arn:aws:cloudformation:us-east-2:502714467465:stack/multienvtest-20190107121345/8a3b9790-1247-11e9-a87b-0aedd1bf2484"
+        }
+    }
+}
