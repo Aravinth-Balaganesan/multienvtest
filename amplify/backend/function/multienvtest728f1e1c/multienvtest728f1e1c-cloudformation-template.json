@@ -63,8 +63,8 @@
 				"Runtime": "nodejs8.10",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "multienvtest-20190107115025-deployment",
-					"S3Key": "amplify-builds/multienvtest728f1e1c-1546843953-latest-build.zip"
+					"S3Bucket": "multienvtest-20190107121345-deployment",
+					"S3Key": "amplify-builds/multienvtest728f1e1c-1546846025-latest-build.zip"
 				}
 			}
 		},
