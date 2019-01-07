@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "bucketName": "multienvtest-20190107130128-hostingbucket"
+=======
+    "bucketName": "multienvtest-20190107132508-hostingbucket"
+>>>>>>> test
 }

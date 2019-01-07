@@ -81,19 +81,31 @@
 		"storagedynamo6f3fb7ad": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
+<<<<<<< HEAD
 				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121345-deployment/amplify-cfn-templates/storage/dynamo6f3fb7ad-cloudformation-template.json",
+=======
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121155-deployment/amplify-cfn-templates/storage/dynamo6f3fb7ad-cloudformation-template.json",
+>>>>>>> test
 				"Parameters": {
 					"tableName": "dynamo6f3fb7ad",
 					"partitionKeyName": "name",
 					"partitionKeyType": "S",
+<<<<<<< HEAD
 					"env": "prod"
+=======
+					"env": "test"
+>>>>>>> test
 				}
 			}
 		},
 		"functionmultienvtest728f1e1c": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
+<<<<<<< HEAD
 				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121345-deployment/amplify-cfn-templates/function/multienvtest728f1e1c-cloudformation-template.json",
+=======
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121155-deployment/amplify-cfn-templates/function/multienvtest728f1e1c-cloudformation-template.json",
+>>>>>>> test
 				"Parameters": {
 					"storagedynamo6f3fb7adName": {
 						"Fn::GetAtt": [
@@ -107,14 +119,22 @@
 							"Outputs.Arn"
 						]
 					},
+<<<<<<< HEAD
 					"env": "prod"
+=======
+					"env": "test"
+>>>>>>> test
 				}
 			}
 		},
 		"authcognitoa67c853f": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
+<<<<<<< HEAD
 				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121345-deployment/amplify-cfn-templates/auth/cognitoa67c853f-cloudformation-template.yml",
+=======
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121155-deployment/amplify-cfn-templates/auth/cognitoa67c853f-cloudformation-template.yml",
+>>>>>>> test
 				"Parameters": {
 					"identityPoolName": "multienvtest_identitypool_a28e8161",
 					"allowUnauthenticatedIdentities": true,
@@ -171,14 +191,22 @@
 							"Arn"
 						]
 					},
+<<<<<<< HEAD
 					"env": "prod"
+=======
+					"env": "test"
+>>>>>>> test
 				}
 			}
 		},
 		"apiapi0ec1e3cc": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
+<<<<<<< HEAD
 				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121345-deployment/amplify-cfn-templates/api/api0ec1e3cc-cloudformation-template.json",
+=======
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121155-deployment/amplify-cfn-templates/api/api0ec1e3cc-cloudformation-template.json",
+>>>>>>> test
 				"Parameters": {
 					"authRoleName": {
 						"Ref": "AuthRoleName"
@@ -198,17 +226,28 @@
 							"Outputs.Arn"
 						]
 					},
+<<<<<<< HEAD
 					"env": "prod"
+=======
+					"env": "test"
+>>>>>>> test
 				}
 			}
 		},
 		"hostingS3AndCloudFront": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
+<<<<<<< HEAD
 				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121345-deployment/amplify-cfn-templates/hosting/template.json",
 				"Parameters": {
 					"bucketName": "multienvtest-20190107130128-hostingbucket",
 					"env": "prod"
+=======
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107121155-deployment/amplify-cfn-templates/hosting/template.json",
+				"Parameters": {
+					"bucketName": "multienvtest-20190107132508-hostingbucket",
+					"env": "test"
+>>>>>>> test
 				}
 			}
 		}
