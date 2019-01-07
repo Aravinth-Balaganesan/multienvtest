@@ -1,0 +1,36 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "multienvtest29f96b54",
+            "privacy": {
+                "protected": true,
+                "auth": "rw",
+                "unauth": "rw"
+            }
+        }
+    ],
+    "resourceName": "api7d46dc8e",
+    "apiName": "api7d46dc8e",
+    "functionArns": [
+        {
+            "lambdaFunction": "multienvtest29f96b54"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "multienvtest-20190107163125-authRole",
+        "unAuthRoleName": "multienvtest-20190107163125-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "multienvtest29f96b54",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -81,19 +81,19 @@
 		"storagedynamo6f3fb7ad": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/storage/dynamo6f3fb7ad-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/storage/dynamo6f3fb7ad-cloudformation-template.json",
 				"Parameters": {
 					"tableName": "dynamo6f3fb7ad",
 					"partitionKeyName": "name",
 					"partitionKeyType": "S",
-					"env": "dev"
+					"env": "mysanbox"
 				}
 			}
 		},
 		"functionmultienvtest728f1e1c": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/function/multienvtest728f1e1c-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/function/multienvtest728f1e1c-cloudformation-template.json",
 				"Parameters": {
 					"storagedynamo6f3fb7adName": {
 						"Fn::GetAtt": [
@@ -107,14 +107,35 @@
 							"Outputs.Arn"
 						]
 					},
-					"env": "dev"
+					"env": "mysanbox"
+				}
+			}
+		},
+		"functionmultienvtest29f96b54": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/function/multienvtest29f96b54-cloudformation-template.json",
+				"Parameters": {
+					"storagedynamo6f3fb7adName": {
+						"Fn::GetAtt": [
+							"storagedynamo6f3fb7ad",
+							"Outputs.Name"
+						]
+					},
+					"storagedynamo6f3fb7adArn": {
+						"Fn::GetAtt": [
+							"storagedynamo6f3fb7ad",
+							"Outputs.Arn"
+						]
+					},
+					"env": "mysanbox"
 				}
 			}
 		},
 		"authcognitoa67c853f": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/auth/cognitoa67c853f-cloudformation-template.yml",
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/auth/cognitoa67c853f-cloudformation-template.yml",
 				"Parameters": {
 					"identityPoolName": "multienvtest_identitypool_a28e8161",
 					"allowUnauthenticatedIdentities": true,
@@ -171,14 +192,14 @@
 							"Arn"
 						]
 					},
-					"env": "dev"
+					"env": "mysanbox"
 				}
 			}
 		},
 		"apiapi0ec1e3cc": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/api/api0ec1e3cc-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/api/api0ec1e3cc-cloudformation-template.json",
 				"Parameters": {
 					"authRoleName": {
 						"Ref": "AuthRoleName"
@@ -198,17 +219,44 @@
 							"Outputs.Arn"
 						]
 					},
-					"env": "dev"
+					"env": "mysanbox"
+				}
+			}
+		},
+		"apiapi7d46dc8e": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/api/api7d46dc8e-cloudformation-template.json",
+				"Parameters": {
+					"authRoleName": {
+						"Ref": "AuthRoleName"
+					},
+					"unauthRoleName": {
+						"Ref": "UnauthRoleName"
+					},
+					"functionmultienvtest29f96b54Name": {
+						"Fn::GetAtt": [
+							"functionmultienvtest29f96b54",
+							"Outputs.Name"
+						]
+					},
+					"functionmultienvtest29f96b54Arn": {
+						"Fn::GetAtt": [
+							"functionmultienvtest29f96b54",
+							"Outputs.Arn"
+						]
+					},
+					"env": "mysanbox"
 				}
 			}
 		},
 		"hostingS3AndCloudFront": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/hosting/template.json",
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107163125-deployment/amplify-cfn-templates/hosting/template.json",
 				"Parameters": {
 					"bucketName": "multienvtest-20190107132508-hostingbucket",
-					"env": "dev"
+					"env": "mysanbox"
 				}
 			}
 		}

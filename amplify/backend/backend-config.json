@@ -20,6 +20,21 @@
 					]
 				}
 			]
+		},
+		"multienvtest29f96b54": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "dynamo6f3fb7ad",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
 		}
 	},
 	"auth": {
@@ -36,6 +51,20 @@
 				{
 					"category": "function",
 					"resourceName": "multienvtest728f1e1c",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		},
+		"api7d46dc8e": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "multienvtest29f96b54",
 					"attributes": [
 						"Name",
 						"Arn"

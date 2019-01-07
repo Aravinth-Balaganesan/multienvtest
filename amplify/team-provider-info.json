@@ -39,5 +39,22 @@
             "StackName": "multienvtest-20190107121345",
             "StackId": "arn:aws:cloudformation:us-east-2:502714467465:stack/multienvtest-20190107121345/8a3b9790-1247-11e9-a87b-0aedd1bf2484"
         }
+    },
+    "mysanbox": {
+        "awscloudformation": {
+            "AuthRoleName": "multienvtest-20190107163125-authRole",
+            "UnauthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107163125-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::502714467465:role/multienvtest-20190107163125-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "multienvtest-20190107163125-deployment",
+            "UnauthRoleName": "multienvtest-20190107163125-unauthRole",
+            "StackName": "multienvtest-20190107163125",
+            "StackId": "arn:aws:cloudformation:us-east-2:502714467465:stack/multienvtest-20190107163125/89312210-126b-11e9-8e7f-0285144e27ac"
+        },
+        "categories": {
+            "auth": {
+                "cognitoa67c853f": {}
+            }
+        }
     }
 }
