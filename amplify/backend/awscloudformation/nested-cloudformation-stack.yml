@@ -201,6 +201,16 @@
 					"env": "dev"
 				}
 			}
+		},
+		"hostingS3AndCloudFront": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/multienvtest-20190107115025-deployment/amplify-cfn-templates/hosting/template.json",
+				"Parameters": {
+					"bucketName": "multienvtest-20190107132508-hostingbucket",
+					"env": "dev"
+				}
+			}
 		}
 	},
 	"Outputs": {
