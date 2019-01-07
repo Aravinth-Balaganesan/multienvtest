@@ -64,7 +64,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "multienvtest-20190107115025-deployment",
-					"S3Key": "amplify-builds/multienvtest728f1e1c-1546847577-latest-build.zip"
+					"S3Key": "amplify-builds/multienvtest728f1e1c-1546853072-latest-build.zip"
 				}
 			}
 		},
